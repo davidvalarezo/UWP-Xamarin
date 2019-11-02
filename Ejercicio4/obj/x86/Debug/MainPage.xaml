@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Ejercicio4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="35*"/>
+      <RowDefinition Height="68*"/>
+      <RowDefinition Height="79*"/>
+      <RowDefinition Height="586*"/>
+    </Grid.RowDefinitions>
+
+    <TextBlock HorizontalAlignment="Left" Height="38" Margin="43,10,0,0" Text="Delegados y Eventos" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" Grid.RowSpan="2" FontSize="14" FontWeight="Bold" RequestedTheme="Light"/>
+
+    <Rectangle x:ConnectionId='2' x:Name="rectangle1" HorizontalAlignment="Left" Height="64" Margin="293,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="64" Fill="#FFC71B1B"                           RenderTransformOrigin="-6.344,1.5" Grid.Row="1"/>
+    <Rectangle x:ConnectionId='3' HorizontalAlignment="Left" Height="64" Margin="13,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="64" RenderTransformOrigin="1.728,0.528" Fill="#FFF5A23F"                           Grid.Row="1"/>
+    <Rectangle x:ConnectionId='4' HorizontalAlignment="Left" Height="64" Margin="84,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="64" Fill="#FF3097C7"                           Grid.Row="1"/>
+    <Rectangle x:ConnectionId='5' HorizontalAlignment="Left" Height="64" Margin="153,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="64" RenderTransformOrigin="1.778,-0.047" Fill="#FF9418B0"                           Grid.Row="1"/>
+    <Rectangle x:ConnectionId='6' HorizontalAlignment="Left" Height="64" Margin="224,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="64" Fill="#FFEADDDD"                           Grid.Row="1"/>
+    <StackPanel Grid.RowSpan="4"></StackPanel>
+
+
+    <Canvas x:ConnectionId='7' x:Name="miCanvas" Margin="10,10,10,30" FocusVisualPrimaryBrush="#FF4A725A"                                      Grid.Row="3" AllowDrop="True"                                                >
+      <Canvas.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+          <GradientStop Color="Black"/>
+          <GradientStop Color="#FF1E4B9B" Offset="1"/>
+        </LinearGradientBrush>
+      </Canvas.Background>
+      <Rectangle x:ConnectionId='10' x:Name="rect" Height="85" Canvas.Left="44" Stroke="Black" Canvas.Top="89" Width="140" FocusVisualPrimaryBrush="#FFA22222" Fill="#FFC54F4F" CanDrag="True" AllowDrop="False" AccessKey="1"                                 />
+      <Ellipse x:ConnectionId='11' x:Name="circulo" Height="85" Canvas.Left="283" Stroke="Black" Canvas.Top="89" Width="80" Fill="#FF4FA453" AccessKey="2"                                  CanDrag="True"/>
+      <TextBlock Text="TextBlock" TextWrapping="Wrap"/>
+      <Ellipse x:ConnectionId='12' Height="158" Canvas.Left="64" Stroke="Black" Canvas.Top="318" Width="120" Fill="#FFE8E816" AccessKey="3"                                  CanDrag="True"/>
+      <Border BorderThickness="1" BorderBrush="Black" Height="52" Canvas.Left="58" Canvas.Top="10" Width="194" Background="#FFACD3A1">
+        <TextBlock TextWrapping="Wrap" FontSize="16" FocusVisualPrimaryBrush="#FF5CA839" FontWeight="Bold" Foreground="#FFC33535" Margin="9,0,12,0" Text="Esto no cambiara de color "/>
+      </Border>
+      <Rectangle x:ConnectionId='13' Height="145" Canvas.Left="283" Stroke="Black" Canvas.Top="288" Width="61" FocusVisualPrimaryBrush="#FF4A9E70" Fill="#FF8FE4D5" AccessKey="4"                                  CanDrag="True"/>
+    </Canvas>
+    <Ellipse x:ConnectionId='8' x:Name="elipse" HorizontalAlignment="Left" Height="64" Margin="13,0,0,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Center" Width="64" Fill="#FF1C41E8"                 />
+    <Rectangle x:ConnectionId='9' x:Name="rectangle" HorizontalAlignment="Left" Height="64" Margin="84,0,0,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Center" Width="64" Fill="#FFF3E90A"                 />
+
+
+
+
+
+  </Grid>
+</Page>
+

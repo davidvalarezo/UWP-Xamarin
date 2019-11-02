@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="Ejercicio3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid FocusVisualPrimaryBrush="#FFAA3A3A" Background="#FF0E0606">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Calculadora" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="#FFEEE2E2" FontWeight="Bold"/>
+        <TextBox x:Name="Op1" HorizontalAlignment="Center" Margin="0,118,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="412" PlaceholderText="1 operando" Foreground="#FFF5EFEF"/>
+        <TextBox x:Name="Op2" HorizontalAlignment="Center" Margin="0,258,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="412" PlaceholderText="2 operando" Foreground="#FFF5EFEF"/>
+        <TextBox x:Name="tb_resultado" HorizontalAlignment="Center" Margin="0,459,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="412" PlaceholderText="Resultado" IsReadOnly="True" Foreground="#FFF5EFEF"/>
+        <Button x:Name="btnOperacion" Content="#" Margin="162,187,167,0" VerticalAlignment="Top" Click="bnOperacionClick" Foreground="#FFF0D8D8" BorderBrush="#FFF9EFEF" FontSize="18" HorizontalAlignment="Center" RequestedTheme="Dark" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0E0606" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFD81C1C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.FocusVisualPrimaryBrush>
+        </Button>
+        <Button x:Name="btnResultado" Content="Calcular" Margin="172,352,177,0" VerticalAlignment="Top" Click="bCalculadora" FontSize="18" Foreground="#FFF0D8D8" BorderBrush="#FFEEE2E2" FocusVisualPrimaryBrush="#FFEADBDB" HorizontalAlignment="Center" RequestedTheme="Dark">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF130202" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="C" Height="48" Margin="190,542,194,0" VerticalAlignment="Top" Foreground="#FFF7F3F3"   RequestedTheme="Dark" BorderBrush="#FFF7EFEF" Click="limpiarPantalla" FontSize="18" FontWeight="Bold" HorizontalAlignment="Stretch" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF130202" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <DropDownButton x:Name="Operacion" Content="Operación" Margin="0,188,319,0" VerticalAlignment="Top" BorderBrush="#FFF5EDED" Foreground="#FFF9F5F5" RequestedTheme="Dark" HorizontalAlignment="Right" Height="37">
+            <DropDownButton.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF130202" Offset="1"/>
+                </LinearGradientBrush>
+            </DropDownButton.Background>
+
+            <DropDownButton.Flyout>
+                <MenuFlyout Placement="BottomEdgeAlignedLeft">
+                    <MenuFlyoutItem Text="+" Tag="1"
+                            Click="bnDOperacionClick"/>
+                    <MenuFlyoutItem Text="-" Tag="2"
+                            Click="bnDOperacionClick"/>
+                    <MenuFlyoutItem Text="*" Tag="3"
+                            Click="bnDOperacionClick"/>
+                    <MenuFlyoutItem Text="/" Tag="4"
+                            Click="bnDOperacionClick"/>
+                </MenuFlyout>
+            </DropDownButton.Flyout>
+        </DropDownButton>
+
+
+
+    </Grid>
+</Page>
