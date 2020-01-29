@@ -29,25 +29,30 @@ namespace E1_Menu_Hamburguesa
 
         private void Option1(object sender, TappedRoutedEventArgs e)
         {
-
+            MiMenu.DisplayMode = SplitViewDisplayMode.Overlay;
         }
 
         private void Option2(object sender, TappedRoutedEventArgs e)
         {
-
+            MiMenu.DisplayMode = SplitViewDisplayMode.Inline;
         }
         private void Option3(object sender, TappedRoutedEventArgs e)
         {
-
+            MiMenu.DisplayMode = SplitViewDisplayMode.CompactOverlay;
         }
         private void Option4(object sender, TappedRoutedEventArgs e)
         {
-
+            MiMenu.DisplayMode = SplitViewDisplayMode.CompactInline;
         }
 
         private void MiMenu_Tapped(object sender, TappedRoutedEventArgs e)
         {
 
+        }
+
+        private void CambiarVisualizacion_Click(object sender, RoutedEventArgs e)
+        {
+            MiMenu.IsPaneOpen = !MiMenu.IsPaneOpen;
         }
 
         private void Page_SizeChanged(object sender, TappedRoutedEventArgs e)

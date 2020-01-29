@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj": {}
+    "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\UWP-Xamarin II\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj": {
+    "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\UWP-Xamarin II\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\UWP-Xamarin II\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj",
         "projectName": "E1_Menu_Hamburguesa",
-        "projectPath": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj",
+        "projectPath": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\UWP-Xamarin II\\E1_Menu_Hamburguesa\\E1_Menu_Hamburguesa.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\E1_Menu_Hamburguesa\\obj\\",
+        "outputPath": "C:\\Users\\david\\Desktop\\GitHub\\UWP-Xamarin\\UWP-Xamarin\\UWP-Xamarin II\\E1_Menu_Hamburguesa\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

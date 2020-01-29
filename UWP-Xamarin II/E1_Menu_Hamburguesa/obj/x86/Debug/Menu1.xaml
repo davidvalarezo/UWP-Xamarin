@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="E1_Menu_Hamburguesa.Menu1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:E1_Menu_Hamburguesa"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FFB43A3A">
+        <Pivot Title="Title">
+            <PivotItem Header="">
+                
+            </PivotItem>
+            
+        </Pivot>
+        <TextBlock HorizontalAlignment="Left" Height="53" Margin="94,20,0,0" Text="Pagina 2" TextWrapping="Wrap"></TextBlock>
+    </Grid>
+</Page>
+

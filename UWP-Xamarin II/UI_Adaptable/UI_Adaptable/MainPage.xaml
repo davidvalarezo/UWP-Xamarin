@@ -1,0 +1,124 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UI_Adaptable"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Windows.Foundation"
+    x:Class="UI_Adaptable.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="grid" Background="#FFE67979" FocusVisualPrimaryBrush="Black">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="UIPequeno">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)">
+                            <Setter.Value>Center</Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,177,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)">
+                            <Setter.Value>
+                                <VerticalAlignment>Top</VerticalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="107"/>
+                        <Setter Target="button.(UIElement.RenderTransformOrigin)">
+                            <Setter.Value>
+                                <Custom:Point>0.164,0.306</Custom:Point>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.HorizontalAlignment)">
+                            <Setter.Value>
+                                <HorizontalAlignment>Left</HorizontalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Width)" Value="317"/>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>179,62,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.VerticalAlignment)">
+                            <Setter.Value>
+                                <VerticalAlignment>Top</VerticalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Height)" Value="48"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="UIMediano">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.FocusVisualPrimaryBrush)">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FFE2E865"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(Panel.Background)">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FFEAEA7C"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Width)" Value="606"/>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,56,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.VerticalAlignment)">
+                            <Setter.Value>
+                                <VerticalAlignment>Top</VerticalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.HorizontalAlignment)">
+                            <Setter.Value>
+                                <HorizontalAlignment>Left</HorizontalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Height)" Value="43"/>
+                        <Setter Target="button.(ContentControl.Content)" Value="Boton Mediano"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="UIGrande">
+                    <VisualState.Setters>
+                        <Setter Target="textBlock.(FrameworkElement.FocusVisualPrimaryBrush)">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FF2E8BBF"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Width)" Value="601"/>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,46,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.VerticalAlignment)">
+                            <Setter.Value>
+                                <VerticalAlignment>Top</VerticalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.HorizontalAlignment)">
+                            <Setter.Value>
+                                <HorizontalAlignment>Center</HorizontalAlignment>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(Panel.Background)">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FF7997E6"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBlock x:Name="textBlock1" Margin="0,46,0,0" Text="Interfaz -adaptable" TextWrapping="Wrap" Height="53" Width="651" FontSize="36"/>
+        <Button x:Name="button" Content="Boton Grande" Margin="138,187,0,0"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="31,264,0,0" Text="Texto de la interfaz" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="558" FocusVisualPrimaryBrush="Black"/>
+
+    </Grid>
+</Page>
